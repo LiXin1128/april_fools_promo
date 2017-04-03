@@ -1,0 +1,122 @@
+.invite-records {
+  background-color: #fff;
+  height: 100vh;
+}
+
+.invite-records .portals {
+  background-color: #fff;
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.invite-records .portals p {
+  border: 1px solid #e8e8e8;
+  margin: 0;
+  padding: 1em;
+}
+
+.invite-records .portals .portal-cont {
+  width: 50%;
+  overflow: hidden;
+  float: left;
+  border: none;
+  padding: 2em 0;
+  box-sizing: border-box;
+  border: 1px solid #e8e8e8;
+}
+
+.invite-records .portals .portal-cont p {
+  float: left;
+  text-align: center;
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.invite-records .portals .portal-cont p.numbers {
+  width: 100%;
+  height: 60px;
+  display: block;
+  float: left;
+  color: #333333;
+  text-align: center;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.invite-records .portals .portal-cont p.confirmed {
+  color: #5ebf4f;
+}
+
+.invite-records .portals .portal-cont p.pending {
+  color: #e5bd50;
+}
+
+.invite-records .tips {
+  float: left;
+  margin: 0;
+  padding: .5em 1em;
+  background-color: #f5f5f5;
+}
+
+.invite-records .no-record {
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  float: left;
+  color: #666666;
+}
+
+.invite-records .no-record i {
+  font-size: 26px;
+}
+
+.invite-records h5 {
+  width: 100%;
+  padding: 0 1em;
+  line-height: 3em;
+  margin: 0;
+}
+
+.invite-records .record-entry {
+  width: 100%;
+  padding: 0 1em;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: none;
+  float: left;
+  box-sizing: border-box;
+}
+
+.invite-records .record-entry p {
+  width: 100%;
+  padding: 1em 0 0 0;
+  float: left;
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+}
+
+.invite-records .record-entry p span {
+  float: right;
+}
+
+.invite-records .record-entry p.detail {
+  font-size: 10px;
+  line-height: 3em;
+  padding: 0;
+  color: #666666;
+}
+
+.invite-records .record-entry p.detail .confirmed {
+  color: #5ebf4f;
+}
+
+.invite-records .record-entry p.detail .pending {
+  color: #e5bd50;
+}
+
+.invite-records .record-entry:last-child {
+  border-bottom: 1px solid #e8e8e8;
+}

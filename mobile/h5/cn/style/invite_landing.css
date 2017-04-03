@@ -1,0 +1,45 @@
+.invite-landing {
+  background-color: #fff;
+  height: 100vh;
+  text-align: center;
+}
+
+.invite-landing .fix-1 {
+  font-weight: bold;
+  color: #666666;
+}
+
+.invite-landing .product {
+  margin: 0 0 30px 0;
+}
+
+.invite-landing .product a {
+  color: #333333;
+}
+
+.invite-landing .product a .des {
+  width: 80%;
+  margin: auto;
+}
+
+.invite-landing .product a .price {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+}
+
+.invite-landing .product a .price span {
+  color: #666666;
+  text-decoration: line-through;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.invite-landing .fix-2 {
+  font-weight: bold;
+}
+
+.invite-landing .fix-2 span {
+  font-size: 20px;
+  color: #ffa100;
+}

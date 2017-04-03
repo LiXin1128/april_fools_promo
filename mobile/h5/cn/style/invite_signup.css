@@ -1,0 +1,21 @@
+#login-page .invite-sticker {
+  height: 113px;
+  width: 254px;
+  margin: 0 auto 1em;
+  background-image: url("../images/signup-sticker.png");
+  background-position: 0 center;
+  background-size: 254px 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+
+#login-page .invite-sticker p {
+  width: 80%;
+  margin: auto;
+}
+
+#login-page .invite-sticker p span {
+  font-size: 20px;
+  color: #ffa100;
+}

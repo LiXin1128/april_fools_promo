@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Yamibuy.com - April Fool's Day</title>
+    <meta name="keywords" content="Yamibuy.com, Yamibuy, online shopping, Asian, food, beauty, appliances, health, collectibles, baby products, bedding, bath, accessories, toys, personal care">
+    <meta name="description" content="Yamibuy.com is the largest online shop for Asian food, beauty, tools and houseware, and health products in the United States. The biggest selection of Asian products you can find.">
+    <!--head-->
+    <script src="/template/en/head.js"></script>
+    <!--head end-->
+    <link rel="stylesheet" type="text/css" href="style/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style/event-main.css">
+    <link rel="stylesheet" type="text/css" href="style/april_fool.css">
+    <link rel="stylesheet" type="text/css" href="style/active.css">
+    <link rel="stylesheet" type="text/css" href="style/bg-active.css">
+
+    <script id="templist">
+        $("#templist").load("items.html").attr("type", "text/html")
+    </script>
+
+    <!--header-->
+    <script src="/template/en/header-light.js" id="header" data-activity="april_fools"></script>
+    <!--header end-->
+    <script src="js/laytpl.js"></script>
+    <script src="js/loadfloor.js"></script>
+
+</head>
+
+<body>
+    <div class="cat-page promo-page">
+        <div class="event-p1 cf" id="event-p1">
+            <div class="countdown">
+                <p>TIME LEFT:</p>
+                <p id="clock"></p>
+            </div>
+        </div>
+
+        <!--float-->
+        <div class="float-wrapper cf">
+            <div class="float cf">
+                <img src="images/float.png">
+                <div class="portals">
+                    <a href="#event-p2"></a>
+                    <a href="#event-p3"></a>
+                    <a href="#event-p4"></a>
+                </div>
+            </div>
+        </div>
+
+        <!--1块商品-->
+        <div class="event-p2 cf" id="event-p2">
+            <div class="part wrapper" id="wrapper_1">
+                <div class="lg-box-cont cf">
+                    <div data-role="goods" data-gids="165735,165736,165741,165738,165737,165734,9768,9769,17352,161994,161995,161993,161986,161996,17353,161987,161988,161992,161990,161991,162000,17356,162002,17355,162003,161997,17354,17357,161999,983,978,981,979,980,5710,164422,13442,163410,3188,14704,14700,8669,78259,165170,13429,14975,6988,6987,3603,162510,162512,433,435,437,436,434,432,17051,165185,156543,164230,162744,163002,163803,15328,164930,164931,162753,162743,162742,29,17051,17041,163779,6439,6437,6435,6441,166631,166630,166623,166643,10403,12518,12519,4100,13138,12498,12157,12499,12496,13614,12497,12565,7390,12517,5418,5415,5417,5416,5421,5420,5410,5425,11239,11241,3999,7213,163096">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--10倍积分商品-->
+        <div class="event-p2 cf" id="event-p3">
+            <div class="part wrapper" id="wrapper_2">
+                <div class="lg-box-cont cf">
+                    <div data-role="goods" data-gids="10858,910,7163,16080,162488,12564,2203,16079,2188,15076,260,261,5603,10488,11186,16390,16386,16384,16387,5937,126374,163419,163418,126372,164065,165909,7946,14971,4582,8111,15085,15087,15086,29,165998,165881,165884,11541,530,12424,166000,165992,162300,163779,5541,16287,140,4224,14999,3610,9418,317,6895,583,660,17392,5889,13134,6896,7346,10580,13133,13131,7345,13132,17385,1098,1097,1101,3575,10405,3796,1998,6269,16310,4014,8913,16305,14531,1997,13126,13125,33915,15604,163504,9003,133723,162366,164985,162359,9044,9043,166164,16267,12693,12270,8039,166163,16279,8055,12692,8038,164917,">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--20倍积分商品-->
+        <div class="event-p3 cf" id="event-p4">
+            <div class="part wrapper" id="wrapper_3">
+                <div class="lg-box-cont cf">
+                    <div data-role="goods" data-gids="5551,13968,16321,851,852,986,1866,1009,12524,12523,162710,162708,164138,164136,164135,164137,164139,5245,6785,5246,5255,165548,165547,165549,12109,16246,16247,163420,6300,164037,164036,6898,588,10060,2837,586,684,682,683,163930,163929,163926,163927,5262,13551,13548,13549,6273,164185,4002,14304,15616,15614,10052,7496,15374,10571,5478,13493,17260,4823,163117,10046,14107,13089,11736,14782,14783,14772,14756,14757,16559,126230,12506,33916,16555,15268,15265,15264,15269,13591,7728,162602,16265,15175,1818,164911,1822,165212,16816,164923,">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("April 1, 2017 23:59:59").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+                // Get todays date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now an the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="demo"
+                document.getElementById("clock").innerHTML = hours + "Hours " + minutes + "Minutes " + seconds + "s ";
+
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("clock").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+
+        <!--footer-->
+        <script src="/template/en/footer.js"></script>
+        <div>
+            <a href="javascript:;" class="go-top"></a>
+        </div>
+        <!--contact us-->
+        <script src="/template/en/contact.js"></script>
+
+        <script>
+            $(function() {
+                var sticky = new Waypoint.Sticky({
+                    element: $('.float')[0]
+                });
+
+                $('[data-cd]').each(function() {
+                    var $this = $(this),
+                        finalDate = $(this).data('cd');
+                    $this.countdown(finalDate * 1000, function(event) {
+                        $(this).html(event.strftime(event.strftime('%D&nbsp&nbsp&nbsp%H&nbsp&nbsp&nbsp&nbsp%M&nbsp&nbsp&nbsp%S')));
+                    });
+                });
+            })
+        </script>
+</body>
+
+</html>

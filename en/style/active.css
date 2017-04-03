@@ -1,0 +1,484 @@
+/*
+ * 此文件夹下放置当前活动所需样式
+ * 样式模块化，每个模块已字母 m 加短横线开头
+ * 以主从选择器的方式定位子元素
+ * 例如 .m-bn, .m-bn tt
+*/
+
+/*头部*/
+.m-head{
+    position: relative;
+    margin: auto;
+    width:100%;
+}
+
+.m-head .btnwp{
+    position: absolute;
+    bottom: 114px;
+    left: 50%;
+    margin-left: -92px;
+    width: 711px;
+    height: 74px;
+}
+
+
+.m-head .btnwp a{
+    display: inline-block;
+}
+
+.m-head .btnwp a:first-child{
+    margin-right: 23px;
+}
+
+.m-head .btnwp a:last-child{
+    margin-left: 23px;
+}
+/* 浮动导航 */
+.m-fwp {
+    width: 1480px;
+    margin: 0 auto;
+}
+
+.m-fwp .float {
+    width: 1500px;
+    right: 0;
+    position: relative;
+    z-index: 10;
+}
+
+.m-fwp .float.stuck {
+    position: fixed;
+    top: 0;
+    left: auto;
+    right: auto;
+}
+
+.m-fwp .float img {
+    display: block;
+    position: absolute;
+    right:-80px;
+}
+
+.m-fwp .float .portals {
+    position: absolute;
+    right: -78px;
+    padding: 120px 0 0 0;
+}
+
+.m-fwp .float .portals a {
+    display: block;
+    width: 173px;
+    height: 35px;
+    margin: 3px 0;
+}
+
+.m-fwp .float .portals .link2{
+    margin-top: 80px;
+    height: 35px;
+
+}
+
+.m-fwp .float .portals .link3{
+    margin-top: 4px;
+    height: 35px;
+}
+
+/* 浮动导航end */
+
+/* 商品列表头部标题 */
+.m-tbner{
+    margin:0 auto;
+    background:#52a780;
+}
+/*end*/
+
+/* 商品列表 */
+.m-gds{
+    margin:0px auto;
+    padding:0px;
+    /*height:3094px;*/
+}
+
+.m-gds .wp{
+    padding: 60px 0 60px 0px;
+}
+
+.m-gds .subwp{
+    position: relative;
+    /*padding: 95px 0;*/
+}
+
+
+.m-gds .subwp1{
+    width: 947px;
+    margin: auto;
+}
+
+.m-gds .subtt-b{
+    margin: 25px 0;
+}
+/*end*/
+
+/* 过渡部分 */
+.m-mbox{
+    position: relative;
+}
+
+.m-mbox .m-fbner{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -258px;
+}
+
+.m-mbox .m-tbner-mid{
+    position: absolute;
+    bottom: -23px;
+    left: 50%;
+    margin-left: -600px;
+}
+
+/* 列表内部元素 */
+.promo-page .lg-it-box {
+    width: 230px;
+    height: 320px;
+    background-color: #fff;
+    border: 1px solid #c2c2c2;
+    padding: 0 10px;
+    margin: 0 0 6px 6px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.promo-page .lg-it-box-rb{
+    background-color: transparent!important;
+}
+
+.promo-page .lg-it-box-rb img{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.promo-page .lg-it-box:hover > .cta-btn {
+    display: block;
+}
+
+.promo-page .lg-it-box .item-pic {
+    width: 210px;
+}
+
+.promo-page .lg-it-box .item-des {
+    margin: 0 0 5px 0;
+}
+
+.promo-page .lg-it-box .cta-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    line-height: 2.5em;
+    padding: 0 1em;
+    text-align: center;
+    font-weight: bold;
+    background-color: #f25950;
+    color: #fff;
+    display: none;
+}
+
+.promo-page .lg-it-box .cta-btn:hover {
+    color: #fff !important;
+    background-color: #ee2C21;
+    display: block;
+}
+
+.promo-page .lg-it-box .see-more {
+    font-size: 28px;
+    color: #FF8A8A;
+    font-weight: bold;
+}
+
+.promo-page .lg-it-box .explore {
+    width: 100px;
+    height: 100px;
+    background-color: #FF8A8A;
+    line-height: 100px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.promo-page .lg-it-box .sticker {
+    width: 44px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    margin: 0;
+}
+
+.promo-page .lg-it-box.super-deal {
+    height: 320px;
+    border: 1px solid #0e8bc5;
+}
+
+.promo-page .lg-it-box.super-deal .percent {
+    font-size: 16px;
+    color: #666;
+}
+
+.promo-page .lg-it-box.super-deal .deal-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.promo-page .lg-it-box.super-deal .deal-status {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    line-height: 2.5em;
+    padding: 0 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.promo-page .lg-it-box.super-deal.ongoing .cta-btn {
+    display: block;
+}
+
+.promo-page .lg-it-box.super-deal.ongoing .deal-info {
+    background-color: #fb0969;
+    color: #fff;
+}
+
+.promo-page .lg-it-box.super-deal.ongoing .deal-status {
+    background-color: #ffcc1b;
+    color: #fff;
+}
+
+.promo-page .lg-it-box.super-deal.coming .cta-btn {
+    display: none !important;
+}
+
+.promo-page .lg-it-box.super-deal.coming .deal-info {
+    background-color: #fff;
+    border-bottom: 1px dotted #fb0969;
+    color: #fb0969;
+}
+
+.promo-page .lg-it-box.super-deal.coming .deal-status {
+    background-color: #fff;
+    color: #ffcc1b;
+}
+
+.promo-page .lg-it-box.super-deal.over .cta-btn {
+    display: none !important;
+}
+
+.promo-page .lg-it-box.super-deal.over .deal-info {
+    background-color: #fb0969;
+    color: #fff;
+}
+
+.promo-page .lg-it-box.super-deal.over .deal-status {
+    background-color: #fff;
+    color: #ffcc1b;
+}
+
+.promo-page .lg-it-box.super-deal .item-details {
+    margin: -10px 0 0 0;
+}
+
+.bu1-page .lg-it-box .item-des {
+    font-weight: bold;
+}
+
+.bu1-page .lg-it-box .item-price {
+    font-weight: bold;
+}
+
+.bu1-page .lg-it-box .cta-btn {
+    background-color: #e03227;
+    border-radius: 15px;
+}
+
+.bu1-page .lg-it-box .cta-btn:hover {
+    background-color: #ef643c;
+}
+/*end*/
+
+
+/*广告图*/
+#mc16-no2-title {
+    margin: 60px 0;
+}
+
+.mc16-no2-main {
+    padding: 30px;
+    /*background-color:#d4bf95;*/
+}
+
+.mc16-no2-main-top {
+    height: 460px;
+}
+
+.mc16-no2-main-cen {
+    height: 347px;
+}
+
+.no2-cen-left {
+    float: left;
+    width: 562px;
+    height: 347px;
+}
+
+.no2-cen-right {
+    float: right;
+    width: 562px;
+    height: 347px;
+}
+
+.mc16-no2-main-bot {
+    height: 93px;
+}
+
+.no2-top-left {
+    float: left;
+}
+
+.no2-top-right-top > img {
+    margin-left: 10px;
+}
+
+.no2-top-right-bot {
+    margin: 14px 0 0 4px;
+}
+
+.no2-top-right-bot > img {
+    float: right;
+    margin-left: 10px;
+}
+
+/*end*/
+
+/* 16宫格 */
+.m-gdsin .itm{
+    width: 285px;
+    height: 211px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.m-gdsin .itm img{
+    display: block;
+    width: 285px;
+    height: 211px;
+    border-radius: 5px;
+    border: 1px solid #e2e2e2;
+}
+
+
+
+.more-box a {
+    height: 320px;
+    font-size: 33px;
+    line-height: 32px;
+    line-height: 1em;
+    display: block;
+    text-align: center;
+    /* padding: 3em; */
+    margin: 50% 0px;}
+
+/*tab 选项卡*/
+.box_1 {
+    padding:10px 7px 0px;
+    margin-top: 69px;
+    z-index: -1;
+    background-color: #f53b93;
+}
+.box_2 {
+    padding:10px 7px 0px;
+    margin-top: 69px;
+    z-index: -1;
+    background-color: #df64ea;
+}
+
+.box_3 {
+    padding:10px 7px 0px;
+    margin-top: 69px;
+    z-index: -1;
+    background-color: #ff681d;
+}
+
+.tab {
+    list-style: none;
+}
+
+.tab > div {
+    float: left;
+    font-size: 24px;
+    font-weight: 800;
+    width: 590px;
+    height: 69px;
+    line-height: 69px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+.tab div:last-child {
+    margin-left: 7px;
+}
+
+/*.tab_data{*/
+/*display: none;*/
+/*padding-top: 10px!important;*/
+/*}*/
+
+.active {
+    display: block;
+}
+
+.on {
+    /**background-color: #fffcf5!important;**/
+}
+
+.img_3 {
+    padding-bottom: 10px;
+}
+
+.b_box {
+    padding: 0 9px;
+    margin-bottom: 23px;
+}
+
+.b_box > a {
+    display: inline-block;
+    border: 1px solid #24e1c5 !important;
+    margin-right: 23px;
+    box-sizing: border-box;
+}
+
+.b_box > a > img {
+    display: block;
+}
+
+.b_box > a:last-child {
+    margin-right: 0;
+}
+
+.tab > div#tab_1, .tab > div#tab_3, .tab > div#tab_5 {
+    width:593px;
+}
+.tab > div#tab_2, .tab > div#tab_4, .tab > div#tab_6 {
+    margin-left: 13px;
+}

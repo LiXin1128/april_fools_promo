@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>April Fool's Day</title>
+
+	<script src="/template/h5_en/head.js"></script> 
+	<!--head end-->
+	<link rel="stylesheet" type="text/css" href="style/april_fools.css">
+
+	<script id="templist">$("#templist").load("items.html").attr("type","text/html")</script>
+
+	<script src="js/laytpl.js"></script>
+	<script src="js/loadfloor.js"></script>
+    
+</head>
+
+<body>
+	<div data-role="page">
+	        <!--header-->
+	        <script src="/template/h5_en/header.js" id="header" data-title="April Fool's Day"></script>
+	        <!-- /header -->
+	        <div role="main" class="ui-content indie-page m-sakura-page">
+	            <div class="full-height">
+	                <div class="top">
+	                    <img class="banner" src="images/m-af-jumbo-en.jpg">
+	                    <div class="countdown">
+							<p>TIME LEFT</p>
+							<p id="clock"></p>
+						</div>
+	                </div>
+
+					<!--1块商品-->
+	                <div class="m-event-p1 cf">
+	                   <img class="title-img" src="images/m-af-p1-title-en.jpg">
+	                    <div class="content-box">
+	                        <div class="box-cont">
+	                            <div class="lg-box-cont cf" data-role="goods" data-gids="165735,165736,165741,165738,165737,165734,9768,9769,17352,161994,161995,161993,161986,161996,17353,161987,161988,161992,161990,161991,162000,17356,162002,17355,162003,161997,17354,17357,161999,983,978,981,979,980,5710,164422,13442,163410,3188"
+								data-link="http://m.yamibuy.com/stack.php?regular=581">
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+
+
+					<!--10倍积分商品-->
+	                <div class="m-event-p2 cf">
+	                   <img class="title-img" src="images/m-af-p2-title-en.jpg">
+	                    <div class="content-box">
+	                        <div class="box-cont">
+	                            <div class="lg-box-cont cf" data-role="goods" data-gids="10858,910,7163,16080,162488,12564,2203,16079,2188,15076,260,261,5603,10488,11186,16390,16386,16384,16387,5937,126374,163419,163418,126372,164065,165909,7946,14971,4582,8111,15085,15087,15086,29,165998,165881,165884,11541,530"
+								data-link="http://m.yamibuy.com/stack.php?regular=582">
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+
+
+	                <!--20倍积分商品-->
+	                <div class="m-event-p3 cf">
+	                   <img class="title-img" src="images/m-af-p3-title-en.jpg">
+	                    <div class="content-box">
+	                        <div class="box-cont">
+	                            <div class="lg-box-cont cf" data-role="goods" data-gids="5551,13968,16321,851,852,986,1866,1009,12524,12523,162710,162708,164138,164136,164135,164137,164139,5245,6785,5246,5255,165548,165547,165549,12109,16246,16247,163420,6300,164037,164036,6898,588,10060,2837,586,684,682,683"
+								data-link="http://m.yamibuy.com/stack.php?regular=583">
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+		<!--footer-->
+
+		<script>
+				// Set the date we're counting down to
+				var countDownDate = new Date("April 1, 2017 23:59:59").getTime();
+
+				// Update the count down every 1 second
+				var x = setInterval(function() {
+
+				    // Get todays date and time
+				    var now = new Date().getTime();
+				    
+				    // Find the distance between now an the count down date
+				    var distance = countDownDate - now;
+				    
+				    // Time calculations for days, hours, minutes and seconds
+				    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+				    
+				    // Output the result in an element with id="demo"
+				    document.getElementById("clock").innerHTML = hours + "Hours "
+				    + minutes + "Minutes " + seconds + "s ";
+				    
+				    // If the count down is over, write some text 
+				    if (distance < 0) {
+				        clearInterval(x);
+				        document.getElementById("clock").innerHTML = "EXPIRED";
+				    }
+				}, 1000);
+			</script>
+
+		<div>
+		    <a href="javascript:;" class="go-top"></a>
+		</div>
+
+		<script>
+			$(function() {
+			    var sticky = new Waypoint.Sticky({
+				  element: $('.float')[0]
+				});
+
+				$('[data-cd]').each(function() {
+				    var $this = $(this), 
+				    finalDate = $(this).data('cd');
+				    $this.countdown(finalDate*1000, function(event) {
+						$(this).html(event.strftime(event.strftime('%D&nbsp&nbsp&nbsp%H&nbsp&nbsp&nbsp&nbsp%M&nbsp&nbsp&nbsp%S')));
+				    });
+			 });
+			})
+		</script>
+</body>
+</html>

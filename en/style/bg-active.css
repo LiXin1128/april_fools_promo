@@ -1,0 +1,89 @@
+/*
+ * 此文件夹下放置所有需要对背景图片操作的样式
+ * 约定以字母 i 加短横线命名
+ * 例如 i-bg
+*/
+.i-bn {
+background-image:url(../images/pink_bannerbg.jpg);
+background-repeat:no-repeat;
+height:673px
+}
+
+.i-bn-in {
+background-image:url(../images/pink_banner.png);
+background-repeat:no-repeat;
+background-size:contain;
+width:90%;
+min-width:1200px;
+background-position:center;
+background-position:top
+}
+
+.i-ctt {
+background-repeat:no-repeat;
+background-position:center
+}
+
+.i-li1 {
+background-image:url(../images/pink_01bg.jpg);
+background-repeat:no-repeat
+}
+
+.i-li1-1 {
+background-image:url(../images/pink_01bg.jpg);
+background-repeat:no-repeat;
+overflow:hidden
+}
+
+.i-li1-1 .i-subtt1 {
+height:313px;
+margin-bottom:30px;
+background-image:url(../images/pink_01tit2.png)
+}
+
+.i-li2 {
+background-color:#fff
+}
+
+.i-mbg2 {
+background-image:url(../images/pink_02bg.jpg);
+overflow:hidden;
+background-repeat:repeat
+}
+
+.i-li2 .i-subtt2 {
+height:317px;
+background-image:url(../images/pink_02tit.png)
+}
+
+.i-li3 {
+background-image:url(../images/pink_03bg.jpg);
+background-repeat:repeat
+}
+
+.i-mbg3 {
+background-image:url(../images/pink_03bg.jpg);
+background-repeat:repeat
+}
+
+.i-li3 .i-subtt3 {
+height:327px;
+margin-bottom:30px;
+background-image:url(../images/pink_03tit.png)
+}
+
+.i-li4 {
+background-image:url(../images/pink_04bg.jpg);
+background-repeat:repeat
+}
+
+.i-mbg4 {
+background-image:url(../images/pink_04bg.jpg);
+background-repeat:repeat
+}
+
+.i-li4 .i-subtt4 {
+margin-bottom:30px;
+height:306px;
+background-image:url(../images/pink_04tit.png)
+}

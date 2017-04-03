@@ -1,0 +1,27 @@
+    {{# for(var i = 0, len = d.list.length; i < len; i++){ }}
+       {{# var g=d.list[i];}}
+       <div class="lg-it-box">
+       <div class="sticker"></div>
+        <a href="http://www.yamibuy.com/cn/goods.php?id={{g.gid}}" target="_blank"><img class="item-pic" src="{{g.basic.image}}">
+        <p class="item-des">{{g.basic.name}}</p>
+        {{# if(g.basic.is_promote == 1){ }}
+            <p class="item-o-price">原价: ${{g.basic.shop_price}}</p>
+            <p class="item-price">${{g.basic.promote_price}}</p>           
+        {{# }else { }}
+           <p class="item-o-price">&nbsp;</p>
+           <p class="item-price">${{g.basic.shop_price}}</p></a>
+        {{# } }}
+        {{# if(g.basic.is_oos == 1){ }}
+          <a href="javascript:;" class="cta-btn disabled-prim-btn" target="_blank">已售完</a>
+        {{# }else { }}
+          <a href="javascript:;" class="cta-btn" data-name="btnAddToCart" data-gid="{{g.gid}}">加入购物车</a>
+        {{# } }}
+       </div>
+    {{# } }} 
+    {{# if(d.moreLink) { }}
+    	<div class="lg-it-box more-box">
+				<a href="{{d.moreLink}}" target="_blank">
+				<div class="explore">查看更多</div>
+				</a>
+			</div>
+    {{# } }}
